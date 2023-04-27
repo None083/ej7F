@@ -104,5 +104,8 @@ public class Main {
                 .sorted(criterioApellido)
                 .forEach(System.out::println);
         
+        System.out.println(listaProfesores.stream().anyMatch(p->p.getEmpleado().contains("John")));
+        
+        
     }
 }
